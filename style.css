@@ -64,8 +64,9 @@ h3 {
 }
 
 figcaption {
-            font-size: 12px;
+            font-size: 15px;
             text-align: center;
+            color: blue;
 }
 
 iframe {
@@ -80,8 +81,10 @@ iframe {
     }
 /** annotation **/
 .container.image {
-    max-width: 800px;
-    padding: 1em;
+    width: 90%;
+    padding: 3px;
+    margin: 0 auto;
+    display: block;
 }
 
 .container.image .caption,
@@ -99,7 +102,7 @@ iframe {
 
 #truck:not(.active) {
     top:30%;
-    right:31%;
+    right:40%;
 }
 
 .dot .inner,
@@ -114,7 +117,7 @@ iframe {
 }
 /** end of dots **/
 .annotate{
-    position: relative;
+    position:relative;
 }
 
 
@@ -130,6 +133,36 @@ iframe {
 .dot.active .inner,
 .dot.active .close {
     display:block;
+}
+
+p.inner {
+    color: white;
+    
+    text-align: center;
+    font-weight: 700;
+    font-size: 10.5px;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+h2.inner {
+    line-height:0.9em;
+    padding-right: 3em;
+    padding-left: 3em;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+}
+/** link styles **/
+a:link {
+    color:blueviolet
+}
+a:visited {
+    color:black
+}
+a:hover {
+    color:blue
 }
 
 /* Tablet/Desktop overrides */
