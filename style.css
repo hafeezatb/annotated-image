@@ -1,0 +1,142 @@
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+body{background-color: aliceblue;}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-size: 16px;}
+
+p {
+    color: black;
+    padding-right: 1em;
+    padding-left: 1em;
+    text-align: left;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Gowun Batang', serif;
+}
+
+h2 {
+    font-family: 'Montagu Slab', serif;
+    font-size: x-large;
+    text-align: center;
+    color: black;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+h4 {
+    text-align: center;
+    padding-right: 1em;
+    padding-left: 1em;
+    line-height: 0.75em;
+}
+
+img {
+    border-color: black;
+    border: 2px solid;
+    width: 100%;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.image {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+h3 {
+    line-height:0.9em;
+    padding-right: 1em;
+    padding-left: 1em;
+    font-family: 'Montagu Slab', serif;
+}
+
+figcaption {
+            font-size: 12px;
+            text-align: center;
+}
+
+iframe {
+        padding-right: 3.5em;
+        padding-left: 3.5em;
+        align-content: center;
+        width: 350px;
+        height: 350px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+/** annotation **/
+.container.image {
+    max-width: 800px;
+    padding: 1em;
+}
+
+.container.image .caption,
+.container.image figcaption {
+    padding: 5px 10px;
+}
+
+.dot{
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position:absolute;
+}
+
+#truck:not(.active) {
+    top:30%;
+    right:31%;
+}
+
+.dot .inner,
+.dot .close {
+    display:none;
+}
+
+/** All the dots **/
+.black{
+    background-color: black;
+    opacity: 0.7;
+}
+/** end of dots **/
+.annotate{
+    position: relative;
+}
+
+
+.dot.active {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.dot.active .inner,
+.dot.active .close {
+    display:block;
+}
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+}
+
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+}
